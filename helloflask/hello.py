@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello():
     retorno = ''
     for i in range(10):
-        retorno += '<P> contando - {}</P>'.format(i)
+        retorno += f'<P> contando - {i} </P>'
 
     return render_template('hello.html', dados=retorno)
 
